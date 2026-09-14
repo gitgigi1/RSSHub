@@ -149,8 +149,8 @@ importers:
         specifier: 0.7.3
         version: 0.7.3
       imapflow:
-        specifier: 1.7.8
-        version: 1.7.8
+        specifier: 2.0.2
+        version: 2.0.2
       instagram-private-api:
         specifier: 1.46.1
         version: 1.46.1
@@ -203,8 +203,8 @@ importers:
         specifier: 9.1.0
         version: 9.1.0
       patchright:
-        specifier: 1.62.3
-        version: 1.62.3
+        specifier: 1.63.0
+        version: 1.63.0
       postal-mime:
         specifier: 3.0.0
         version: 3.0.0
@@ -4109,11 +4109,6 @@ packages:
     resolution: {integrity: sha512-EQsFzMUJkCKGr1ePqlYADkIUmHW1s3ZXr5Yqy6wbGrfUCphpl2maM/kyOIRA2HpP3AaFQTZXD4ldjek+nccddA==}
     engines: {node: '>=14.14'}
 
-  fsevents@2.3.2:
-    resolution: {integrity: sha512-xiqMQR4xAeHTuB9uWm+fFRcIOgKBMiOBP+eXiyT7jsgVCq1bkVygt00oASowB7EdtpOHaaPgKt812P9ab+DDKA==}
-    engines: {node: ^8.16.0 || ^10.6.0 || >=11.0.0}
-    os: [darwin]
-
   fsevents@2.3.3:
     resolution: {integrity: sha512-5xoDfX+fL7faATnagmWPpbFtwh/R77WmMMqqHGS65C3vvB0YHrgF+B1YmZ3441tMj5n63k0212XNoJwzlhffQw==}
     engines: {node: ^8.16.0 || ^10.6.0 || >=11.0.0}
@@ -4345,8 +4340,9 @@ packages:
     engines: {node: '>=6.9.0'}
     hasBin: true
 
-  imapflow@1.7.8:
-    resolution: {integrity: sha512-dJoCIdZOJh26Rn2PdwEzwj0bRDgGBxxX38pio534FagIHVuR2l0SAfLr6sJo32YfuJHiSs/U2ntNDHnMg3/Hlg==}
+  imapflow@2.0.2:
+    resolution: {integrity: sha512-jrWWecWFifN3Feum2MqaTUupNeYSAdPEltKuwGdr8IPdxW72NZXf7ObVUfTWoUH2MPrli0q7SZm9pRt8ob/9XQ==}
+    engines: {node: '>=20.0.0'}
 
   import-in-the-middle@3.5.0:
     resolution: {integrity: sha512-O6wo8l0lhBuytKz3x8S65TvacFtoopji+gCVeEBbjCaRy75gkk4bCBQoVmY7OEZ63cbFK+yf77pDCTWaadV7hQ==}
@@ -5213,13 +5209,13 @@ packages:
   parseley@0.13.1:
     resolution: {integrity: sha512-uNBJZzmb60l6p6VWLTmevizNAGnE0xoSf1n0B4q3ntegDNzcS68NRCcBDZTcyXHxt2XhBChsCuqj4M+nChvE/A==}
 
-  patchright-core@1.62.3:
-    resolution: {integrity: sha512-RQf0M2THMf4TL9HNNUxdYbd4Oe3DOVPni6G/bJYsEpD9F1cgqEpWiTJIh+pfuK9JwGRo4Du6lzagJosMUXbh/Q==}
+  patchright-core@1.63.0:
+    resolution: {integrity: sha512-nuRJVTMVKoOFzY8vmwFqJZR3F0trUCKiPzDSgCOPq/yHHTefm9czILV23dXJsi5mvS7sCy7U1CqG7edA/21DtQ==}
     engines: {node: '>=20'}
     hasBin: true
 
-  patchright@1.62.3:
-    resolution: {integrity: sha512-TMpWzcZVWUmOe1251PHWpk0gTP2d7+mvS00h1CLL2IQAUKX7UexKfPqEjdKkH8F2TT5AlyrSbwZKr5lu1dThAQ==}
+  patchright@1.63.0:
+    resolution: {integrity: sha512-WVXhmNhAJ5I+CmcHEu/I3KMKhOlQaKS1XJsk+5nRIypKJ3Dq9IaQP29p4vB3I1FWCTarUXVRj02Na30wGcuztQ==}
     engines: {node: '>=20'}
     hasBin: true
 
@@ -9402,9 +9398,6 @@ snapshots:
       jsonfile: 6.2.1
       universalify: 2.0.1
 
-  fsevents@2.3.2:
-    optional: true
-
   fsevents@2.3.3:
     optional: true
 
@@ -9676,7 +9669,7 @@ snapshots:
 
   image-size@0.7.5: {}
 
-  imapflow@1.7.8:
+  imapflow@2.0.2:
     dependencies:
       '@zone-eu/mailsplit': 5.4.16
       encoding-japanese: 2.3.0
@@ -9685,7 +9678,7 @@ snapshots:
       libmime: 5.4.3
       libqp: 2.1.1
       pino: 10.3.1
-      socks: 2.8.9
+      socks: 2.8.10
 
   import-in-the-middle@3.5.0:
     dependencies:
@@ -10788,13 +10781,11 @@ snapshots:
       leac: 0.7.0
       peberminta: 0.10.0
 
-  patchright-core@1.62.3: {}
+  patchright-core@1.63.0: {}
 
-  patchright@1.62.3:
+  patchright@1.63.0:
     dependencies:
-      patchright-core: 1.62.3
-    optionalDependencies:
-      fsevents: 2.3.2
+      patchright-core: 1.63.0
 
   path-exists@4.0.0: {}
 
